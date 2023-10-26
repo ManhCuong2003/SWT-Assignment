@@ -28,6 +28,8 @@ public class TC02 {
             AssertJUnit.assertEquals(priceOnList, priceOnProduct);
         } catch (Exception e) {
             e.printStackTrace();
+        } finally {
+            driver.quit();
         }
     }
 }

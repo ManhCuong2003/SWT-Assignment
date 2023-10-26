@@ -34,6 +34,8 @@ public class TC01 {
             FileUtils.copyFile(screenshotFile, new File("D:\\FPT\\CN5\\SWT301\\baitap\\BT4\\selenium-webdriver-java\\src\\test\\java\\screenshot.png"));
         } catch (Exception e) {
             e.printStackTrace();
+        } finally {
+            driver.quit();
         }
 
     }
