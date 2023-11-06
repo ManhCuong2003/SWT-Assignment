@@ -15,6 +15,8 @@ public class CheckOutPage {
 
     By zipCodeField = By.id("billing:postcode");
 
+    By provinceField = By.id("billing:region_id");
+
     By countryField = By.id("billing:country_id");
 
     By phoneField = By.id("billing:telephone");
@@ -37,11 +39,8 @@ public class CheckOutPage {
 
     public void selectNewAddress() {
         WebElement addressSelect = driver.findElement(addressSelectField);
-        String address = addressSelect.getText();
-        if (!address.equals("New Address")) {
-            Select addressSelected = new Select(addressSelect);
-            addressSelected.selectByVisibleText("New Address");
-        }
+        Select addressSelected = new Select(addressSelect);
+        addressSelected.selectByVisibleText("New Address");
     }
 
     public void enterAddress(String address) {
@@ -65,7 +64,13 @@ public class CheckOutPage {
     public void enterCounty() {
         WebElement country = driver.findElement(countryField);
         Select countrySelect = new Select(country);
-        countrySelect.selectByVisibleText("Vietnam");
+        countrySelect.selectByVisibleText("United States");
+    }
+
+    public void enterProvince() {
+        WebElement province = driver.findElement(provinceField);
+        Select provinceSelect = new Select(province);
+        provinceSelect.selectByVisibleText("Alabama");
     }
 
     public void enterTelephone(String telephone) {

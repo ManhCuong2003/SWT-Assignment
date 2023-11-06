@@ -11,7 +11,7 @@ public class CartPage {
 
     By countryField = By.id("country");
 
-    By stateOrProvinceField = By.id("region");
+    By stateOrProvinceField = By.id("region_id");
 
     By zipField = By.id("postcode");
 
@@ -24,13 +24,13 @@ public class CartPage {
     public void enterCountry() {
         WebElement country = driver.findElement(countryField);
         Select countrySelect = new Select(country);
-        countrySelect.selectByVisibleText("Vietnam");
+        countrySelect.selectByVisibleText("United States");
     }
 
-    public void enterStateOrProvince(String provinceOrState) {
+    public void enterStateOrProvince() {
         WebElement province = driver.findElement(stateOrProvinceField);
-        province.clear();
-        province.sendKeys(provinceOrState);
+        Select provinceSelect = new Select(province);
+        provinceSelect.selectByVisibleText("Alabama");
     }
 
     public void enterZipCode(String zip) {
