@@ -25,7 +25,7 @@ public class CheckOutPage {
 
     By continueShipMethodButton = By.xpath("//button[@onclick='shippingMethod.save()']");
 
-    By checkPaymentInformation = By.xpath("//input[@id='p_method_checkmo']");
+    By checkPaymentInformation = By.id("p_method_checkmo");
 
     By continuePaymentInforButton = By.cssSelector("button[onclick='payment.save()']");
 

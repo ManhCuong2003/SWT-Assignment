@@ -15,7 +15,7 @@ import java.io.File;
 public class TC06 {
     @Test
     public void testCase06() {
-        String email = "TranManhCuongtest1234@gmail.com";
+        String email = "TranManhCuongtest12345@gmail.com";
         String password = "123456";
         String city = "Florence";
         String zipCode = "35211";
@@ -76,15 +76,15 @@ public class TC06 {
             checkOutPage.enterZip(zipCode);
             checkOutPage.enterTelephone(telephone);
             checkOutPage.clickBillingContinueButton();
-            Thread.sleep(2000);
+            Thread.sleep(3000);
             checkOutPage.clickShipMethodContinueButton();
-            Thread.sleep(2000);
+            Thread.sleep(3000);
             checkOutPage.clickCheckPaymentInfor();
-            Thread.sleep(2000);
+            Thread.sleep(3000);
             checkOutPage.clickContinuePaymentInfor();
-            Thread.sleep(2000);
+            Thread.sleep(3000);
             checkOutPage.clickPlaceOrder();
-            Thread.sleep(2000);
+            Thread.sleep(3000);
             File screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
             FileUtils.copyFile(screenshotFile, new File("D:\\FPT\\CN5\\SWT301\\baitap\\BT4\\selenium-webdriver-java\\src\\test\\java\\screenshotTestcase06.png"));
         } catch (Exception e) {

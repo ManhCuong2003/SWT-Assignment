@@ -14,7 +14,7 @@ public class TC05 {
     public void Testcase05(){
         String firstName = "Cuong";
         String lastName = "Tran";
-        String email = "TranManhCuongtest1234@gmail.com";
+        String email = "TranManhCuongtest12345@gmail.com";
         String password = "123456";
         String confirmPassword = password;
 

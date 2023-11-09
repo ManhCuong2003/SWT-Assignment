@@ -15,7 +15,7 @@ import java.util.List;
 public class TC08 {
     @Test
     public void testCase08() {
-        String email = "TranManhCuongtest1234@gmail.com";
+        String email = "TranManhCuongtest12345@gmail.com";
         String password = "123456";
         String testData = "10";
         String city = "Florence";
